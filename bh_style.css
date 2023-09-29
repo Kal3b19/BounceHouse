@@ -1,0 +1,437 @@
+*{
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: space-between;
+    position: relative;
+}
+
+header h2{
+    text-align: center;
+    padding-left: 360px;
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+header nav ul a{
+    text-decoration: none;
+}
+
+header nav ul  li a{
+    font-size:  24px;
+    text-decoration: none;
+    margin-left: 35px; 
+}
+header nav ul li a:hover,
+header nav ul li a.active{
+    border-bottom-color: black;
+}
+
+.hamburger{
+    cursor: pointer;
+    display: block;
+    display: none;
+}
+
+.hamburger div{
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: black;
+}
+/* ============================  Hero Section ===================*/
+.container{
+height: 93vh;
+background-image: url("/images/background.webp");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+position: relative;
+}
+
+.container h1 {
+    position: absolute;
+    top:  155px;
+    left: 70px;
+    font: bold;
+    font-size: 50px;
+    color: white;
+    font-family: 'Cherry Bomb One', cursive;
+}
+
+.container h2{
+    padding: 55px 10px 0px 50px;
+}
+
+.txtbox{
+    position: absolute;
+    top: 47%;
+    left: 0;
+    height: 350px;
+    width: 400px;
+    border-radius: 0px 150px 0 0;
+    background-color: green;
+
+    
+}
+
+.txtbox p {
+    padding: 35px 10px 0px 50px;
+    font-size: 25px;
+}
+
+.txtbox button{
+    margin: 35px 10px 0px 50px;
+    font-size: 25px;
+    background-color: yellow;
+    border-radius: 5px;
+    padding: 5px;
+    -webkit-animation: bounce 0.75s infinite;
+    cursor: pointer;
+}
+
+.txtbox button:hover{
+    -webkit-animation: none;
+}
+
+@-webkit-keyframes bounce {
+    0% {
+transform: scale(1,1) translate(0px, 0px);
+}
+
+30%{
+transform: scale(1,0.8) translate(0px, 10px); 
+}
+
+75%{
+transform: scale(1,1.1) translate(0px, -25px); 
+}
+
+100% {
+transform: scale(1,1) translate(0px, 0px);
+}
+}
+
+
+.picbox{
+    position: absolute;
+    top: 23%;
+    right: 0;
+    height: 285px;
+    width: 380px;
+    border-radius: 180px 0 0 180px;
+    background-color: #ffff;
+    align-items: center;
+    animation: slideInFromside 3s ease-in ;
+}
+
+.picbox:hover{
+    animation: none;
+
+}
+
+.pic{
+    align-items: center;
+    padding: 2px 0px 0px 120px;
+    box-shadow: -3px -2px -5px black;
+}
+
+.picbox_btn{
+    position: absolute;
+    top: 45%;
+    left: 40px;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(233, 60, 60);
+    cursor: pointer;
+}
+
+@keyframes slideInFromside{
+    0%{
+        transform: translateX(100%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+/* ============================  Company Section ===================*/
+
+.container2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 350px;
+    align-items: center;
+    vertical-align: middle;
+    margin-top: 35px;
+    margin-bottom: 5px;
+}
+
+.container2 h1{
+    font-size: 55px;
+    text-align: center;
+    font-family: 'Cherry Bomb One', cursive;
+}
+
+.container2 p{
+    font-size: 25px;
+    padding: 115px;
+}
+
+.companyinfo{
+    background-color: rgba(249, 249, 4, .5);
+    height: 350px;
+}
+
+
+
+/* ============================  Rentals Section ===================*/
+#rentals{
+    position: relative;
+}
+#rentals h1{
+    text-align: center;
+    font-size: 55px;
+    margin-top: 25px;
+    font-family: 'Cherry Bomb One', cursive;
+}
+
+.thumbnails {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+.previewimg{
+    padding: 1px;
+    width: 450px;
+    border: 4px solid yellow;
+    margin: 25px;
+}
+
+.rentals_img{
+    height: 120px;
+    border: 4px solid green;
+    margin: 0 10px 10px 0;
+}
+
+.rentnow{
+    position: absolute;
+    top: 300px;
+    right: 50px;
+    background-color: red;
+    text-align: center;
+    height: 350px;
+    width: 250px;
+    border-radius: 150px;
+    -webkit-animation: bounce 0.75s infinite;
+    font-size: 20px;
+}
+
+.rentnow p{
+    font-size: 20px;
+}
+/* ============================  contact Section ===================*/
+
+.container3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: #0000;
+    background-color: green;
+    height: 260px;
+}
+
+.container3 h1{
+    text-align: center;
+    font-size: 55px;
+    margin: 80px;
+    vertical-align: middle;
+}
+
+address{
+    font-size: 20px;
+    text-align: center;
+    padding: 80px;
+}
+
+.contactinfo{
+    padding: 80px;
+}
+
+/* ============================  Responsive Section ===================*/
+
+@media  (max-width: 800px) {
+    header {
+        justify-content: space-between;
+    }
+    .hamburger { 
+        display: block;
+    }
+    
+    header nav {
+        position: absolute;
+        width: 100%;
+        left: -100%;
+        top: 70px;
+        background: yellow;
+        padding: 30px;
+        transition: .2s;
+    } 
+
+    header #nav_check:checked ~ nav {
+        left: 0;
+
+    }
+    header nav ul{
+        display: block;
+    }
+
+    header nav ul li{
+        margin: 5px 0;
+    }
+
+    header h2{
+        display: none;
+    }
+    /*=============================== hero ================*/
+    .container h1 {
+        position: absolute;
+        top:  35px;
+        left: 0px;
+        font: bold;
+        font-size: 45px;
+        color: white;
+        font-family: 'Cherry Bomb One', cursive;
+    }
+
+    .txtbox{
+        position: absolute;
+        top: 60%;
+        left: 0;
+        height: 255px;
+        width: 400px;
+        border-radius: 0px 125px 0 0;
+        background-color: green;  
+    }
+
+    .picbox{
+        position: absolute;
+        top: 15%;
+        right: 0;
+        height: 285px;
+        width: 350px;
+        border-radius: 180px 0 0 180px;
+        background-color: #ffff;
+        align-items: center;
+        animation: slideInFromside 3s ease-in;
+    }
+
+    .container2{
+        display: grid;
+        grid-template-columns: 1fr ;
+        height: 350px;
+        align-items: center;
+        vertical-align: middle;
+        margin-top: 35px;
+        margin-bottom: 5px;
+    }
+
+    .container2 p{
+        font-size: 25px;
+        padding: 45px;
+    }
+
+    .companyinfo{
+        background-color: rgba(249, 249, 4, .5);
+        height: 350px;
+        margin-bottom: 10px;
+    }
+/* ============================  Rentals Section ===================*/
+    #rentals h1{
+        text-align: center;
+        font-size: 55px;
+        margin-top: 65px;
+        font-family: 'Cherry Bomb One', cursive;
+    }
+    .thumbnails {
+        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+        justify-content: center;
+        margin-top: 10px;
+        column-gap: 140px;
+        padding-left: 20px;
+    }
+
+    .rentnow{
+        position: absolute;
+        top: 100px;
+        right: 180px;
+        background-color: red;
+        text-align: center;
+        height: 350px;
+        width: 150px;
+        border-radius: 150px;
+        -webkit-animation: bounce 0.75s infinite;
+        font-size: 20px;
+    }
+
+    .previewimg{
+        padding: 1px;
+        width: 80%;
+        border: 4px solid yellow;
+        margin: 8px;
+    }
+
+    .rentals_img{
+        height: 100px;
+        border: 4px solid green;
+        margin: 0 10px 10px 0;
+    }
+/* =========================== footer =========================*/
+    .container3{
+        display: grid;
+        grid-template-columns: 1fr;
+        border: #0000;
+        background-color: green;
+        height: 260px;
+    }
+
+    address{
+        font-size: 20px;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .container3 h1{
+        text-align: center;
+        font-size: 55px;
+        margin: 0px;
+        vertical-align: middle;
+    }
+
+    
+    .contactinfo{
+        padding: 10px;
+    }
+
+}
+

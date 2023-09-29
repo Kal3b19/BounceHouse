@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce House</title>
+    <link rel="stylesheet" href="bh_style.css">
+    <script src="https://kit.fontawesome.com/2fd929a184.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <i class="fa-solid fa-place-of-worship fa-2xl" style="display: block;"></i>
+        <h2>BounceHouse Palace</h2> 
+        <input type="checkbox" id="nav_check" hidden>
+
+
+        <nav>
+            <ul>   
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#companyinfo">Services</a></li>
+                <li><a href="#rentals">Rentals</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        
+        <div for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1> <span>Bounce House</span> Rentals</h1>
+        <div class="txtbox">
+            <h2>We Bring the Party to You!</h2>
+            <p>We are a company that allows rentals of Bounce Houses, Tables, and Chairs</p>
+            <a href="#companyinfo"><button>Learn More</button></a>
+        </div>
+
+        <div class="picbox">
+            <a href="#rentals"><button class="picbox_btn">View More</button></a>
+            <img src="images/img1.webp" class="pic">
+        </div>
+    </div>
+    <div class="container2" id="companyinfo">
+        <h1>WE Offer</h1>
+        <div class="companyinfo">
+            <p>
+                BounceHouse Palace offers a variety of bounce houses to rent and the option 
+                to rent party tables and chairs.
+                Customers are able to rent out the bounce houses,tables etc by the hour, 
+                when rented we have associates that will bring what rented and set it up.
+            </p>
+        </div>
+        
+    </div>
+
+    <div id="rentals" >
+        <h1>Rentals</h1>
+        <div class="thumbnails">
+            <img onmouseover="preview.src=img1.src" name="img1" class="rentals_img" src="/images/img1.webp"/>
+            <img onmouseover="preview.src=img3.src" name="img3" class="rentals_img" src="/images/img3.jpg"/>
+            <img onmouseover="preview.src=img4.src" name="img4" class="rentals_img" src="/images/img4.jpg"/>
+            <img onmouseover="preview.src=img5.src" name="img5" class="rentals_img" src="/images/img5.jpg"/>
+            <img onmouseover="preview.src=img6.src" name="img6" class="rentals_img" src="/images/img6.jpg"/> 
+        </div>
+
+        <div class="preview" align="center">
+            <img name="preview" class="previewimg" src="/images/img1.webp"/>
+        </div>
+
+        <div class="rentnow">
+            <h1>Rent Now!!</h1><br>
+            <h2>Call Here!!</h2><br>
+            <p><i class="fa-solid fa-phone" style="color: #000000;"></i>1-800-7335-4500</p><br>
+        </div>
+    </div>
+
+    <address class="container3" id="contact">
+        <h1>Contact</h1>
+        <div class="contactinfo">
+            Email: BounceHousePalace@gmail.com<br>
+            <i class="fa-solid fa-phone" style="color: #000000;"></i> 1-800-7335-4500 <br>
+            1342 south berry st <br>
+            Houston ,tx 77067
+        </div>
+    </address>  
+
+
+    <footer style="background-color: black; color: grey; text-align: center; height: 30px; width: 100%; font-size: 24px; font-family: 'Ysabeau SC', sans-serif; padding: 5px;">
+        <p>Created by @Acewebsites</p>
+    </footer>
+</body>
+</html>
