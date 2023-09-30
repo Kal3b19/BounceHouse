@@ -33,7 +33,6 @@ header nav ul  li a{
     font-size:  24px;
     text-decoration: none;
     margin-left: 35px; 
-    color: black;
 }
 header nav ul li a:hover,
 header nav ul li a.active{
@@ -204,7 +203,8 @@ transform: scale(1,1) translate(0px, 0px);
 #rentals{
     position: relative;
 }
-#rentals h1{
+#rentals h1,
+.rentnow_title{
     text-align: center;
     font-size: 55px;
     margin-top: 25px;
@@ -334,7 +334,7 @@ address{
 
     .picbox{
         position: absolute;
-        top: 15%;
+        top: 25%;
         right: 0;
         height: 285px;
         width: 350px;
@@ -350,7 +350,7 @@ address{
         height: 350px;
         align-items: center;
         vertical-align: middle;
-        margin-top: 35px;
+        margin-top: 85px;
         margin-bottom: 5px;
     }
 
@@ -378,21 +378,25 @@ address{
         justify-content: space-between;
         justify-content: center;
         margin-top: 10px;
-        column-gap: 160px;
+        column-gap: 110px;
         padding-left: 20px;
     }
 
     .rentnow{
         position: absolute;
-        top: 110px;
-        right: 140px;
+        top: 330px;
+        right: 0px;
         background-color: red;
-        text-align: center;
-        height: 350px;
-        width: 150px;
+        height: 120px;
+        width: 250px;
         border-radius: 150px;
         -webkit-animation: bounce 0.75s infinite;
-        font-size: 20px;
+        font-size: 10px;
+    }
+
+    .rentnow_title {
+        margin-top: 0px;
+        font-size: 2.5rem;
     }
 
     .previewimg{
@@ -435,5 +439,3 @@ address{
     }
 
 }
-
-
